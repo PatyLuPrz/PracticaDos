@@ -26,7 +26,7 @@ import controllers.ControllerMain;
 public class Main {
     ModelAddresses modelAddresses = new ModelAddresses();
     ViewAddresses viewAddresses = new ViewAddresses();
-    ControllerAddresses controllerAddresses = new ControllerAddresses();
+    ControllerAddresses controllerAddresses = new ControllerAddresses(modelAddresses, viewAddresses);
     
     ModelDistribuitors modelDistribuitors = new ModelDistribuitors();
     ViewDistributors viewDistributors = new ViewDistributors();
