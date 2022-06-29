@@ -129,3 +129,8 @@ BEGIN
 END
 ;;
 delimiter ;
+
+
+CREATE USER 'user_practica'@'localhost' IDENTIFIED BY 'pass_practica.2022';
+GRANT ALL PRIVILEGES ON practica_dp.* TO 'user_practica'@'localhost';
+FLUSH PRIVILEGES;

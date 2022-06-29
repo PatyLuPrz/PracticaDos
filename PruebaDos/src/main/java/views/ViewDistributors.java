@@ -26,75 +26,151 @@ public class ViewDistributors extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jb_anadir = new javax.swing.JButton();
         jl_titulo = new javax.swing.JLabel();
-        jb_consultar = new javax.swing.JButton();
         jl_id = new javax.swing.JLabel();
         jl_fecharegistro = new javax.swing.JLabel();
         jtf_id = new javax.swing.JTextField();
         jtf_fecharegistro = new javax.swing.JTextField();
-
-        jb_anadir.setText("Añadir");
+        jbtn_nuevo = new javax.swing.JButton();
+        jbtn_insertar = new javax.swing.JButton();
+        jbtn_modificar = new javax.swing.JButton();
+        jbtn_eliminar = new javax.swing.JButton();
+        jbtn_cancelar = new javax.swing.JButton();
+        jbtn_ultimo = new javax.swing.JButton();
+        jbtn_siguiente = new javax.swing.JButton();
+        jbtn_anterior = new javax.swing.JButton();
+        jbtn_primero = new javax.swing.JButton();
+        jbtn_editar = new javax.swing.JButton();
 
         jl_titulo.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jl_titulo.setText("Distributors");
-
-        jb_consultar.setText("Consultar");
 
         jl_id.setText("ID Distribuidor");
 
         jl_fecharegistro.setText("Fecha registro");
 
+        jtf_id.setEditable(false);
+
+        jtf_fecharegistro.setEditable(false);
+
+        jbtn_nuevo.setText("Nuevo");
+
+        jbtn_insertar.setText("Guardar");
+        jbtn_insertar.setEnabled(false);
+
+        jbtn_modificar.setText("Modificar");
+        jbtn_modificar.setEnabled(false);
+
+        jbtn_eliminar.setText("Eliminar");
+
+        jbtn_cancelar.setText("Cancelar");
+        jbtn_cancelar.setEnabled(false);
+
+        jbtn_ultimo.setText(">|");
+
+        jbtn_siguiente.setText(">>");
+
+        jbtn_anterior.setText("<<");
+
+        jbtn_primero.setText("|<");
+
+        jbtn_editar.setText("editar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jl_titulo)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jl_titulo)
+                                .addComponent(jl_fecharegistro))
+                            .addGap(210, 210, 210))
+                        .addGroup(layout.createSequentialGroup()
                             .addComponent(jl_id)
-                            .addComponent(jl_fecharegistro)
-                            .addComponent(jb_anadir, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jtf_fecharegistro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jtf_id, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jb_consultar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(32, 32, 32))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jtf_id, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(29, 29, 29)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jbtn_editar)
+                            .addComponent(jtf_fecharegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jbtn_primero)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_anterior)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_siguiente)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_ultimo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jbtn_nuevo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtn_insertar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtn_modificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtn_eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jbtn_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(jl_titulo)
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_id)
-                    .addComponent(jtf_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jl_fecharegistro)
-                    .addComponent(jtf_fecharegistro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(86, 86, 86)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jb_anadir)
-                    .addComponent(jb_consultar))
-                .addGap(32, 32, 32))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jbtn_nuevo)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_insertar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_modificar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_eliminar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_cancelar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jl_titulo)
+                        .addGap(32, 32, 32)
+                        .addComponent(jbtn_editar)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jtf_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jtf_fecharegistro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jl_id)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jl_fecharegistro)))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jbtn_primero)
+                            .addComponent(jbtn_anterior)
+                            .addComponent(jbtn_siguiente)
+                            .addComponent(jbtn_ultimo))))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jb_anadir;
-    private javax.swing.JButton jb_consultar;
-    private javax.swing.JLabel jl_fecharegistro;
-    private javax.swing.JLabel jl_id;
-    private javax.swing.JLabel jl_titulo;
-    private javax.swing.JTextField jtf_fecharegistro;
-    private javax.swing.JTextField jtf_id;
+    public javax.swing.JButton jbtn_anterior;
+    public javax.swing.JButton jbtn_cancelar;
+    public javax.swing.JButton jbtn_editar;
+    public javax.swing.JButton jbtn_eliminar;
+    public javax.swing.JButton jbtn_insertar;
+    public javax.swing.JButton jbtn_modificar;
+    public javax.swing.JButton jbtn_nuevo;
+    public javax.swing.JButton jbtn_primero;
+    public javax.swing.JButton jbtn_siguiente;
+    public javax.swing.JButton jbtn_ultimo;
+    public javax.swing.JLabel jl_fecharegistro;
+    public javax.swing.JLabel jl_id;
+    public javax.swing.JLabel jl_titulo;
+    public javax.swing.JTextField jtf_fecharegistro;
+    public javax.swing.JTextField jtf_id;
     // End of variables declaration//GEN-END:variables
 }

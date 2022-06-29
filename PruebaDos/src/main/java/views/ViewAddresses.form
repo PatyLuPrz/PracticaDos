@@ -19,34 +19,50 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jl_titulo" min="-2" max="-2" attributes="0"/>
-                  <Component id="jl_colonia" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jl_id" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_calle" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jl_numerocasa" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jb_anadir" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jbtn_primero" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_anterior" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_siguiente" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_ultimo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jtf_numerocasa" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
-                                  <Component id="jtf_calle" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
-                                  <Component id="jtf_id" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
-                                  <Component id="jtf_colonia" alignment="0" min="-2" pref="137" max="-2" attributes="0"/>
+                              <Component id="jl_titulo" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="141" max="32767" attributes="0"/>
+                              <Component id="jbtn_editar" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jl_id" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_calle" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_numerocasa" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_colonia" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jtf_numerocasa" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtf_colonia" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtf_calle" max="32767" attributes="0"/>
+                                  <Component id="jtf_id" alignment="1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                              <Component id="jb_consultar" min="-2" pref="115" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
                       </Group>
+                      <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jbtn_nuevo" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jbtn_insertar" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jbtn_modificar" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jbtn_eliminar" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jbtn_cancelar" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -54,35 +70,61 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="jl_titulo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jl_id" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jtf_id" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jl_calle" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jtf_calle" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jl_numerocasa" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtn_nuevo" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jl_colonia" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jtf_colonia" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jbtn_insertar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_modificar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_eliminar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_cancelar" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jtf_numerocasa" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jl_titulo" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jbtn_editar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jl_id" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jtf_id" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jl_calle" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jtf_calle" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jl_numerocasa" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jtf_colonia" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jl_colonia" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jtf_numerocasa" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jb_anadir" min="-2" max="-2" attributes="0"/>
-                  <Component id="jb_consultar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jbtn_primero" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_anterior" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_siguiente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_ultimo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -95,44 +137,180 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Addresses"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jl_id">
       <Properties>
         <Property name="text" type="java.lang.String" value="ID Distribuidor"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jl_calle">
       <Properties>
         <Property name="text" type="java.lang.String" value="Calle"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jl_numerocasa">
       <Properties>
         <Property name="text" type="java.lang.String" value="Numero casa"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jl_colonia">
       <Properties>
         <Property name="text" type="java.lang.String" value="Colonia"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="jtf_id">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="default"/>
+        </Property>
+        <Property name="UI" type="javax.swing.plaf.TextUI" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="default"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="jtf_calle">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="default"/>
+        </Property>
+        <Property name="UI" type="javax.swing.plaf.TextUI" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="default"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="jtf_colonia">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="default"/>
+        </Property>
+        <Property name="UI" type="javax.swing.plaf.TextUI" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="default"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="jtf_numerocasa">
-    </Component>
-    <Component class="javax.swing.JButton" name="jb_anadir">
       <Properties>
-        <Property name="text" type="java.lang.String" value="A&#xf1;adir"/>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="document" type="javax.swing.text.Document" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="default"/>
+        </Property>
+        <Property name="UI" type="javax.swing.plaf.TextUI" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="default"/>
+        </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jb_consultar">
+    <Component class="javax.swing.JButton" name="jbtn_nuevo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Consultar"/>
+        <Property name="text" type="java.lang.String" value="Nuevo"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_insertar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guardar"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_modificar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modificar"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_eliminar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Eliminar"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_cancelar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_siguiente">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&gt;&gt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_ultimo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&gt;|"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_primero">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="|&lt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_anterior">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;&lt;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_editar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="editar"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
