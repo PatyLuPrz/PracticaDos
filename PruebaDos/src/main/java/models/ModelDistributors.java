@@ -9,5 +9,24 @@ package models;
  * @author worte
  */
 public class ModelDistributors {
+    private String id;
+    private String fecha_registro;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getFecha_registro() {
+        return fecha_registro;
+    }
+
+    public void setFecha_registro(String fecha_registro) {
+        this.fecha_registro = fecha_registro;
+    }
+    
     
 }
