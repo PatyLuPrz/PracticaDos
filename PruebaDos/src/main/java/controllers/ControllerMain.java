@@ -68,18 +68,21 @@ public class ControllerMain {
     };
             
     private void jmi_adresses_actionPerformed() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        controllerAddeses.initView();
+        viewMain.setContentPane(controllerAddeses.viewAddresses);
         }
 
         private void jmi_persons_actionPerformed() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
-        private void jmi_salir_actionPerformed() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            controllerPersons.initView();
+            viewMain.setContentPane(controllerPersons.viewPersons);
         }
 
         private void jmi_distributors_actionPerformed() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            controllerDistributors.initView();
+            viewMain.setContentPane(controllerDistributors.viewDistributors);
+        }
+        
+        private void jmi_salir_actionPerformed() {
+            System.exit(0);
         }
 }

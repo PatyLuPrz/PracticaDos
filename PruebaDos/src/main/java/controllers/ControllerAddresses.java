@@ -4,10 +4,18 @@
  */
 package controllers;
 
+import java.awt.Container;
+
 /**
  *
  * @author worte
  */
 public class ControllerAddresses {
+
+    Container viewAddresses;
+
+    void initView() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
