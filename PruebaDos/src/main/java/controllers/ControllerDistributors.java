@@ -5,6 +5,10 @@
 package controllers;
 
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import models.ModelDistributors;
+import views.ViewDistributors;
 
 /**
  *
@@ -12,10 +16,35 @@ import java.awt.Container;
  */
 public class ControllerDistributors {
 
-    Container viewDistributors;
+    public ModelDistributors modelDistributors;
+    public ViewDistributors viewDistributors;
 
+    ActionListener actionListener = new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (e.getSource() == viewDistributors) {
+                
+            } 
+        }
+    };
+    
+    public ControllerDistributors(ModelDistributors modelDistributors, ViewDistributors viewDistributors){
+        this.modelDistributors = modelDistributors;
+        this.viewDistributors = viewDistributors;
+        setActionListener();
+        initDB();
+    }
+    
     void initView() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+       
+    }
+
+    private void setActionListener() {
+        
+    }
+
+    private void initDB() {
+        
     }
     
 }

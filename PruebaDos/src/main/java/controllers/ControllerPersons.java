@@ -5,6 +5,10 @@
 package controllers;
 
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import models.ModelPersons;
+import views.ViewPersons;
 
 /**
  *
@@ -12,10 +16,34 @@ import java.awt.Container;
  */
 public class ControllerPersons {
 
-    Container viewPersons;
+     public ModelPersons modelPersons;
+    public ViewPersons viewPersons;
 
-    void initView() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    ActionListener actionListener = new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (e.getSource() == viewPersons) {
+                
+            } 
+        }
+    };
+    
+    public ControllerPersons(ModelPersons modelPersons, ViewPersons viewPersons){
+        this.modelPersons = modelPersons;
+        this.viewPersons = viewPersons;
+        setActionListener();
+        initDB();
     }
     
+    void initView() {
+       
+    }
+
+    private void setActionListener() {
+        
+    }
+
+    private void initDB() {
+        
+    }
 }

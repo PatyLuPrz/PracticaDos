@@ -8,6 +8,6 @@ package models;
  *
  * @author worte
  */
-public class ModelDistribuitors {
+public class ModelDistributors {
     
 }
