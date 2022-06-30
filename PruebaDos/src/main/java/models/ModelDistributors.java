@@ -50,7 +50,7 @@ public class ModelDistributors {
         try{
             cn = DriverManager.getConnection(connector_url,database_user,database_password);
             st = cn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-            String sql = "SELECT * FROM addresses;";            
+            String sql = "SELECT * FROM distributors;";            
             rs = st.executeQuery(sql);
             rs.next();
         } catch(SQLException e){
@@ -60,12 +60,10 @@ public class ModelDistributors {
    
    public void setValues(){
        try {
-            id_distribuidor = rs.getString("Id_Distribuidor");
-            calle = rs.getString("Calle");
-            colonia = rs.getString("Colonia");
-            numero_casa = rs.getString("Numero_Casa");
+            id = rs.getString("Id");
+            fecha_registro = rs.getString("Fecha_Registro");
         } catch (SQLException err) {
-            JOptionPane.showMessageDialog(null, "Error Model addresses 001: " + err.getMessage());
+            JOptionPane.showMessageDialog(null, "Error Model distributors 001: " + err.getMessage());
 
         }
    }
@@ -75,7 +73,7 @@ public class ModelDistributors {
             rs.first();
             setValues();
         } catch(SQLException err){
-            JOptionPane.showMessageDialog(null,"Error Model addresses 002: "+ err.getMessage());
+            JOptionPane.showMessageDialog(null,"Error Model distributors 002: "+ err.getMessage());
         }
    }
    
@@ -86,7 +84,7 @@ public class ModelDistributors {
                 setValues();
             }
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Error Model addresses 003: " + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error Model distributors 003: " + ex.getMessage());
         }
    }
    
@@ -97,7 +95,7 @@ public class ModelDistributors {
                 setValues();
             }
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Error Model addresses 004: " + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error Model distributors 004: " + ex.getMessage());
         }
    }
    
@@ -106,39 +104,39 @@ public class ModelDistributors {
             rs.last();
             setValues();
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Error Model addresses 005" + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error Model distributors 005" + ex.getMessage());
         }
    }
    
-   public void insert(String Id_Distribuidor, String Calle, String Numero_Casa, String Colonia){
+   public void insert(String Id, String Fecha_Registro){
         try{
-            String sql = "INSERT INTO addresses VALUES ('"+Id_Distribuidor+"','"+Calle+"','"+Numero_Casa+"','"+Colonia+"');";
+            String sql = "INSERT INTO distributors VALUES ('"+Id+"','"+Fecha_Registro+"');";
             System.out.println(sql);
             st.executeUpdate(sql);
             this.conectarBD();
         } catch(SQLException ex){
-            JOptionPane.showMessageDialog(null, "Error Model addresses 006: " + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error Model distributors 006: " + ex.getMessage());
         }
     }
    
-   public void update(String Id_Distribuidor, String Calle, String Numero_Casa, String Colonia){
+   public void update(String Id, String Fecha_Registro){
         try{
-            String actual_id = this.getId_distribuidor();
-            String sql = "UPDATE addresses SET Calle='"+Calle+"',Numero_Casa='"+Numero_Casa+"',Colonia='"+Colonia+"' WHERE Id_Distribuidor='"+actual_id+"';";
+            String actual_id = this.getId();
+            String sql = "UPDATE distributors SET Fecha_Registro='"+Fecha_Registro+"'WHERE Id='"+actual_id+"';";
             st.executeUpdate(sql);
             this.conectarBD();
            } catch(SQLException ex){
-            JOptionPane.showMessageDialog(null, "Error Model addresses 007: " + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error Model distributors 007: " + ex.getMessage());
         }
     }
    
-   public void delete(String Id_Distribuidor){
+   public void delete(String Id){
         try{
-            String sql= "DELETE FROM addresses WHERE Id_Distribuidor='"+Id_Distribuidor+"'";
+            String sql= "DELETE FROM distributors WHERE Id='"+Id+"'";
             st.executeUpdate(sql);
             this.conectarBD();
         } catch(SQLException ex){
-            JOptionPane.showMessageDialog(null, "Error Model addresses 008: " + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error Model distributors 008: " + ex.getMessage());
         }
     }
     

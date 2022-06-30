@@ -43,6 +43,7 @@ public class ControllerMain {
         viewMain.jmi_addresses.addActionListener(actionListener);
         viewMain.jmi_distributors.addActionListener(actionListener);
         viewMain.jmi_persons.addActionListener(actionListener);
+        viewMain.jmi_salir.addActionListener(actionListener);
         
     }
 
@@ -83,6 +84,6 @@ public class ControllerMain {
         }
         
         private void jmi_salir_actionPerformed() {
-            System.exit(0);
+            System.exit(1);
         }
 }
